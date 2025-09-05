@@ -100,5 +100,23 @@ namespace TestePOO
             //Repetir no botão aluno
             MessageBox.Show(professor.CPFNome);
         }
+
+        private void btnCadastro_Click(object sender, EventArgs e)
+        {
+            //Para cadastrar um aluno
+            //é preciso cadastrar uma disciplina
+            //para cadastrar a disciplina
+            //é preciso cadastrar um professor
+
+            //Cadastro Professor
+            Professor professor = new Professor();
+            professor.Nome = "Lucas";
+            professor.CPF = "1324789";
+            professor.DtNascimento = DateTime.Now;
+            professor.RE = "12345";
+            professor.Salario = 1;
+
+            //
+        }
     }
 }

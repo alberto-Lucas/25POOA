@@ -15,5 +15,6 @@ namespace TestePOO
     {
         public string RA { get; set; }
         public bool Matriculado { get; set; }
+        public Disciplina Disciplina { get; set; }
     }
 }
