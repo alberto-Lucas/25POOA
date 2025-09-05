@@ -116,7 +116,34 @@ namespace TestePOO
             professor.RE = "12345";
             professor.Salario = 1;
 
-            //
+            //Cadastro da Disciplina
+            Disciplina disciplina = new Disciplina();
+            disciplina.Nome = "Programação Orientada a Objeto";
+            disciplina.Professor = professor;
+
+            //Cadastro do Aluno
+            Aluno aluno = new Aluno();
+            aluno.Nome = "Arthur";
+            aluno.CPF = "321564654";
+            aluno.DtNascimento = DateTime.Now;
+            aluno.RA = "213464";
+            aluno.Matriculado = true;
+            aluno.Disciplina = disciplina;
+
+            ExibirDados(aluno);
+        }
+
+        //Método para exibir os dados do cadastro
+        //no textBox
+        void ExibirDados(Aluno aluno)
+        {
+            txtCadastro.Text =
+                "Aluno:" + Environment.NewLine + 
+                "RA: " + aluno.RA + Environment.NewLine + 
+                "Nome: " + aluno.Nome + Environment.NewLine + 
+                "Disciplina:" + Environment.NewLine + 
+                "Nome: " + aluno.Disciplina.Nome + Environment.NewLine + 
+                "Professor: " + aluno.Disciplina.Professor.Nome;
         }
     }
 }

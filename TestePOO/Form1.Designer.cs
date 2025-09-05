@@ -32,6 +32,7 @@
             this.btnAluno = new System.Windows.Forms.Button();
             this.btnProfessor = new System.Windows.Forms.Button();
             this.btnCadastro = new System.Windows.Forms.Button();
+            this.txtCadastro = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -66,7 +67,7 @@
             // 
             // btnCadastro
             // 
-            this.btnCadastro.Location = new System.Drawing.Point(151, 23);
+            this.btnCadastro.Location = new System.Drawing.Point(93, 23);
             this.btnCadastro.Name = "btnCadastro";
             this.btnCadastro.Size = new System.Drawing.Size(88, 23);
             this.btnCadastro.TabIndex = 3;
@@ -74,11 +75,20 @@
             this.btnCadastro.UseVisualStyleBackColor = true;
             this.btnCadastro.Click += new System.EventHandler(this.btnCadastro_Click);
             // 
+            // txtCadastro
+            // 
+            this.txtCadastro.Location = new System.Drawing.Point(120, 61);
+            this.txtCadastro.Multiline = true;
+            this.txtCadastro.Name = "txtCadastro";
+            this.txtCadastro.Size = new System.Drawing.Size(252, 179);
+            this.txtCadastro.TabIndex = 4;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(271, 137);
+            this.ClientSize = new System.Drawing.Size(413, 265);
+            this.Controls.Add(this.txtCadastro);
             this.Controls.Add(this.btnCadastro);
             this.Controls.Add(this.btnProfessor);
             this.Controls.Add(this.btnAluno);
@@ -86,6 +96,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -95,6 +106,7 @@
         private System.Windows.Forms.Button btnAluno;
         private System.Windows.Forms.Button btnProfessor;
         private System.Windows.Forms.Button btnCadastro;
+        private System.Windows.Forms.TextBox txtCadastro;
     }
 }
 
