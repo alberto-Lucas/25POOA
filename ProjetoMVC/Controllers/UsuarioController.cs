@@ -103,5 +103,8 @@ namespace ProjetoMVC.Controllers
 
             return dataBase.ExecuteSQL(command);
         }
+
+        //Método publico par excluir um registro
+        public int Excluir()
     }
 }
