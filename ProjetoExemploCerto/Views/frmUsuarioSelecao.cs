@@ -1,7 +1,7 @@
-﻿using ProjetoMVCExemplo.Controllers;
+﻿using ProjetoExemploCerto.Controllers;
 using System.Windows.Forms;
 
-namespace ProjetoMVCExemplo.Views
+namespace ProjetoExemploCerto.Views
 {
     public partial class frmUsuarioSelecao : Form
     {
@@ -14,14 +14,15 @@ namespace ProjetoMVCExemplo.Views
         public frmUsuarioSelecao()
         {
             InitializeComponent();
+            //Comando para evitar da grid gerar os campos automaticamente
+            //dgvRegistros.AutoGenerateColumns = false;
         }
 
-        private void btnPesquisar_Click(object sender, System.EventArgs e)
+        void AtualizarGrid()
         {
-            AtualizarGrid();
+            dgvRegistros.DataSource = null;
+            dgvRegistros.DataSource = usuarioController.GetAll();
         }
-
-        
 
         private void btnAdicionar_Click(object sender, System.EventArgs e)
         {
@@ -30,10 +31,9 @@ namespace ProjetoMVCExemplo.Views
                 AtualizarGrid();
         }
 
-        void AtualizarGrid()
+        private void btnPesquisar_Click(object sender, System.EventArgs e)
         {
-            dgvRegistros.DataSource = null;
-            dgvRegistros.DataSource = usuarioController.GetAll();
+            AtualizarGrid();
         }
     }
 }

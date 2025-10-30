@@ -1,4 +1,4 @@
-﻿namespace ProjetoMVCExemplo.Views
+﻿namespace ProjetoExemploCerto.Views
 {
     partial class frmUsuarioSelecao
     {
@@ -47,7 +47,7 @@
             this.lblRegistros.Location = new System.Drawing.Point(12, 240);
             this.lblRegistros.Name = "lblRegistros";
             this.lblRegistros.Size = new System.Drawing.Size(35, 13);
-            this.lblRegistros.TabIndex = 33;
+            this.lblRegistros.TabIndex = 43;
             this.lblRegistros.Text = "label4";
             // 
             // btnSelecionar
@@ -56,7 +56,7 @@
             this.btnSelecionar.Location = new System.Drawing.Point(12, 269);
             this.btnSelecionar.Name = "btnSelecionar";
             this.btnSelecionar.Size = new System.Drawing.Size(75, 23);
-            this.btnSelecionar.TabIndex = 32;
+            this.btnSelecionar.TabIndex = 42;
             this.btnSelecionar.Text = "Selecionar";
             this.btnSelecionar.UseVisualStyleBackColor = true;
             // 
@@ -66,7 +66,7 @@
             this.btnAdicionar.Location = new System.Drawing.Point(343, 269);
             this.btnAdicionar.Name = "btnAdicionar";
             this.btnAdicionar.Size = new System.Drawing.Size(75, 23);
-            this.btnAdicionar.TabIndex = 31;
+            this.btnAdicionar.TabIndex = 41;
             this.btnAdicionar.Text = "Adicionar";
             this.btnAdicionar.UseVisualStyleBackColor = true;
             this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);
@@ -77,7 +77,7 @@
             this.btnAlterar.Location = new System.Drawing.Point(424, 269);
             this.btnAlterar.Name = "btnAlterar";
             this.btnAlterar.Size = new System.Drawing.Size(75, 23);
-            this.btnAlterar.TabIndex = 30;
+            this.btnAlterar.TabIndex = 40;
             this.btnAlterar.Text = "Alterar";
             this.btnAlterar.UseVisualStyleBackColor = true;
             // 
@@ -87,7 +87,7 @@
             this.btnExcluir.Location = new System.Drawing.Point(505, 269);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(75, 23);
-            this.btnExcluir.TabIndex = 29;
+            this.btnExcluir.TabIndex = 39;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
             // 
@@ -97,7 +97,7 @@
             this.btnVisualizar.Location = new System.Drawing.Point(586, 269);
             this.btnVisualizar.Name = "btnVisualizar";
             this.btnVisualizar.Size = new System.Drawing.Size(75, 23);
-            this.btnVisualizar.TabIndex = 28;
+            this.btnVisualizar.TabIndex = 38;
             this.btnVisualizar.Text = "Visualizar";
             this.btnVisualizar.UseVisualStyleBackColor = true;
             // 
@@ -109,14 +109,14 @@
             this.dgvRegistros.Name = "dgvRegistros";
             this.dgvRegistros.RowHeadersVisible = false;
             this.dgvRegistros.Size = new System.Drawing.Size(649, 176);
-            this.dgvRegistros.TabIndex = 27;
+            this.dgvRegistros.TabIndex = 37;
             // 
             // btnPesquisar
             // 
             this.btnPesquisar.Location = new System.Drawing.Point(586, 22);
             this.btnPesquisar.Name = "btnPesquisar";
             this.btnPesquisar.Size = new System.Drawing.Size(75, 23);
-            this.btnPesquisar.TabIndex = 26;
+            this.btnPesquisar.TabIndex = 36;
             this.btnPesquisar.Text = "Pesquisar";
             this.btnPesquisar.UseVisualStyleBackColor = true;
             this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
@@ -126,7 +126,7 @@
             this.txtNome.Location = new System.Drawing.Point(12, 24);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(568, 20);
-            this.txtNome.TabIndex = 23;
+            this.txtNome.TabIndex = 35;
             // 
             // label2
             // 
@@ -134,7 +134,7 @@
             this.label2.Location = new System.Drawing.Point(12, 8);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 13);
-            this.label2.TabIndex = 22;
+            this.label2.TabIndex = 34;
             this.label2.Text = "Nome:";
             // 
             // frmUsuarioSelecao
@@ -156,7 +156,7 @@
             this.MaximizeBox = false;
             this.Name = "frmUsuarioSelecao";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmUsuarioSelecao";
+            this.Text = "Cadastro de Usuários";
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegistros)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
