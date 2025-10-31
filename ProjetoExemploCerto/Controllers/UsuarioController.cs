@@ -54,7 +54,7 @@ namespace ProjetoExemploCerto.Controllers
                 "Nome = @Nome, " +
                 "Email = @Email, " +
                 "Senha = @Senha " +
-                "WHERE UsuarioId = @UsuarioId";
+                "WHERE usuario_id = @UsuarioId";
 
             SqlCommand command = new SqlCommand(query);
             //Definindo os valores dos parametros
@@ -74,7 +74,7 @@ namespace ProjetoExemploCerto.Controllers
             //um registro na tabela de clientes
             string query =
                 "DELETE FROM Usuario " +
-                "WHERE UsuarioId = @UsuarioId";
+                "WHERE usuario_id = @UsuarioId";
             SqlCommand command = new SqlCommand(query);
             //Definindo os valores dos parametros
             command.Parameters.AddWithValue("@UsuarioId", usuarioId);
@@ -91,7 +91,7 @@ namespace ProjetoExemploCerto.Controllers
             string query =
                 "SELECT * " +
                 "FROM Usuario " +
-                "WHERE UsuarioId = @UsuarioId" +
+                "WHERE usuario_id = @UsuarioId" +
                 "ORDER BY nome";
             SqlCommand command = new SqlCommand(query);
             //Definindo os valores dos parametros

@@ -59,6 +59,7 @@
             this.btnSelecionar.TabIndex = 42;
             this.btnSelecionar.Text = "Selecionar";
             this.btnSelecionar.UseVisualStyleBackColor = true;
+            this.btnSelecionar.Visible = false;
             // 
             // btnAdicionar
             // 
@@ -80,6 +81,7 @@
             this.btnAlterar.TabIndex = 40;
             this.btnAlterar.Text = "Alterar";
             this.btnAlterar.UseVisualStyleBackColor = true;
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
             // 
             // btnExcluir
             // 
@@ -90,6 +92,7 @@
             this.btnExcluir.TabIndex = 39;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnVisualizar
             // 
@@ -100,14 +103,17 @@
             this.btnVisualizar.TabIndex = 38;
             this.btnVisualizar.Text = "Visualizar";
             this.btnVisualizar.UseVisualStyleBackColor = true;
+            this.btnVisualizar.Click += new System.EventHandler(this.btnVisualizar_Click);
             // 
             // dgvRegistros
             // 
             this.dgvRegistros.AllowUserToAddRows = false;
             this.dgvRegistros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvRegistros.Location = new System.Drawing.Point(12, 61);
+            this.dgvRegistros.MultiSelect = false;
             this.dgvRegistros.Name = "dgvRegistros";
             this.dgvRegistros.RowHeadersVisible = false;
+            this.dgvRegistros.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvRegistros.Size = new System.Drawing.Size(649, 176);
             this.dgvRegistros.TabIndex = 37;
             // 
