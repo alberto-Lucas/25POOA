@@ -18,10 +18,15 @@ namespace ProjetoExemploCerto.Views
             //dgvRegistros.AutoGenerateColumns = false;
         }
 
+        //Método para realizar a pesquisa no banco de dados
         void AtualizarGrid()
         {
             dgvRegistros.DataSource = null;
-            dgvRegistros.DataSource = usuarioController.GetAll();
+            //Aqui podemos chamar a consulta para retornar todos
+            //dgvRegistros.DataSource = usuarioController.GetAll();
+            //Aqui podemos chamar a consulta com filtro por nome
+            //Passando o campo vazio, será retornado todos os registro
+            dgvRegistros.DataSource = usuarioController.GetByName(txtNome.Text);
         }
 
         private void btnAdicionar_Click(object sender, System.EventArgs e)
