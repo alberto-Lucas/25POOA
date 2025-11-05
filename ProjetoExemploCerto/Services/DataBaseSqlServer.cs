@@ -22,7 +22,7 @@ namespace ProjetoExemploCerto.Services
             //Autenticação (Usuario e Senha ou Autenticação do Windows)
             connection.ConnectionString =
                 "Data Source=.\\SQLEXPRESS;" +
-                "Initial Catalog=testeMVC;" +
+                "Initial Catalog=ProjetoMVC;" +
                 "Integrated Security=SSPI;";
 
             //Método para abrir a conexão

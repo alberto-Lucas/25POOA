@@ -91,7 +91,7 @@ namespace ProjetoExemploCerto.Controllers
             string query =
                 "SELECT * " +
                 "FROM Usuario " +
-                "WHERE usuario_id = @UsuarioId" +
+                "WHERE usuario_id = @UsuarioId " +
                 "ORDER BY nome";
             SqlCommand command = new SqlCommand(query);
             //Definindo os valores dos parametros

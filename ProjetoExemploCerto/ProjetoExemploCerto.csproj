@@ -46,17 +46,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\PedidoController.cs" />
+    <Compile Include="Controllers\PedidoItemController.cs" />
+    <Compile Include="Controllers\UniformeController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
+    <Compile Include="Models\Pedido.cs" />
+    <Compile Include="Models\PedidoItem.cs" />
+    <Compile Include="Models\Uniforme.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\DataBaseSqlServer.cs" />
     <Compile Include="Tutorial.cs" />
+    <Compile Include="Views\frmPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmPedido.Designer.cs">
+      <DependentUpon>frmPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmPedidoDetalhes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmPedidoDetalhes.Designer.cs">
+      <DependentUpon>frmPedidoDetalhes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmPedidoHistorico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmPedidoHistorico.Designer.cs">
+      <DependentUpon>frmPedidoHistorico.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmUniformeCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmUniformeCadastro.Designer.cs">
+      <DependentUpon>frmUniformeCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmUniformeSelecao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\frmUniformeSelecao.Designer.cs">
+      <DependentUpon>frmUniformeSelecao.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\frmUsuarioCadastro.cs">
       <SubType>Form</SubType>
@@ -79,8 +115,23 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\frmPedido.resx">
+      <DependentUpon>frmPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmPedidoDetalhes.resx">
+      <DependentUpon>frmPedidoDetalhes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmPedidoHistorico.resx">
+      <DependentUpon>frmPedidoHistorico.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmUniformeCadastro.resx">
+      <DependentUpon>frmUniformeCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\frmUniformeSelecao.resx">
+      <DependentUpon>frmUniformeSelecao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frmUsuarioCadastro.resx">
       <DependentUpon>frmUsuarioCadastro.cs</DependentUpon>

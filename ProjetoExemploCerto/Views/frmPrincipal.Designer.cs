@@ -32,6 +32,10 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.cadastrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.uniformesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gerencialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.solicitarUniformesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.históricoDePedidosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,7 +54,8 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cadastrosToolStripMenuItem});
+            this.cadastrosToolStripMenuItem,
+            this.gerencialToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
@@ -60,7 +65,8 @@
             // cadastrosToolStripMenuItem
             // 
             this.cadastrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.usuáriosToolStripMenuItem});
+            this.usuáriosToolStripMenuItem,
+            this.uniformesToolStripMenuItem});
             this.cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
             this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.cadastrosToolStripMenuItem.Text = "Cadastros";
@@ -68,9 +74,39 @@
             // usuáriosToolStripMenuItem
             // 
             this.usuáriosToolStripMenuItem.Name = "usuáriosToolStripMenuItem";
-            this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.usuáriosToolStripMenuItem.Text = "Usuários";
             this.usuáriosToolStripMenuItem.Click += new System.EventHandler(this.usuáriosToolStripMenuItem_Click);
+            // 
+            // uniformesToolStripMenuItem
+            // 
+            this.uniformesToolStripMenuItem.Name = "uniformesToolStripMenuItem";
+            this.uniformesToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.uniformesToolStripMenuItem.Text = "Uniformes";
+            this.uniformesToolStripMenuItem.Click += new System.EventHandler(this.uniformesToolStripMenuItem_Click);
+            // 
+            // gerencialToolStripMenuItem
+            // 
+            this.gerencialToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.solicitarUniformesToolStripMenuItem,
+            this.históricoDePedidosToolStripMenuItem});
+            this.gerencialToolStripMenuItem.Name = "gerencialToolStripMenuItem";
+            this.gerencialToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
+            this.gerencialToolStripMenuItem.Text = "Gerencial";
+            // 
+            // solicitarUniformesToolStripMenuItem
+            // 
+            this.solicitarUniformesToolStripMenuItem.Name = "solicitarUniformesToolStripMenuItem";
+            this.solicitarUniformesToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.solicitarUniformesToolStripMenuItem.Text = "Solicitar Uniformes";
+            this.solicitarUniformesToolStripMenuItem.Click += new System.EventHandler(this.solicitarUniformesToolStripMenuItem_Click);
+            // 
+            // históricoDePedidosToolStripMenuItem
+            // 
+            this.históricoDePedidosToolStripMenuItem.Name = "históricoDePedidosToolStripMenuItem";
+            this.históricoDePedidosToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.históricoDePedidosToolStripMenuItem.Text = "Histórico de Pedidos";
+            this.históricoDePedidosToolStripMenuItem.Click += new System.EventHandler(this.históricoDePedidosToolStripMenuItem_Click);
             // 
             // frmPrincipal
             // 
@@ -96,5 +132,9 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem cadastrosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usuáriosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem uniformesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem gerencialToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem solicitarUniformesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem históricoDePedidosToolStripMenuItem;
     }
 }

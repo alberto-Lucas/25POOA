@@ -13,11 +13,36 @@ namespace ProjetoExemploCerto.Views
 
         //Cirar instancia com a controller
         UsuarioController usuarioController = new UsuarioController();
-        public frmUsuarioSelecao()
+
+        //Atributo público necessário para retornar
+        //o cliente selecionado quando o usuário clicar
+        //no botão "Selecionar".
+        public Usuario usuarioSelecao;
+
+        //O parâmetro "ExibirBotaoSelecionar" é necessário
+        //para sabermos se o botão "Selecionar" deve ser
+        //exibido ou não. O valor padrão dele é "false",
+        //portanto, se quem chamar o construtor não passar
+        //o valor "true", o botão não será exibido.
+        public frmUsuarioSelecao(bool ExibirBotaoSelecionar = false)
         {
             InitializeComponent();
+
+            //Essa linha é necessária para que o DataGridView não
+            //crie as colunas de forma automática, exibindo todas
+            //as propriedades do objeto. A intenção é nós definirmos
+            //somente algumas colunas para serem exibidas.
+            //Para adicionar as colunas, clique no DataGridView e clique
+            //na setinha preta que aparece no canto superior direito dele.
+            //Clique em Edit Column e adicione as colunas que desejar.
+            //Após adicionar as colunas (e ainda na tela de edição de coluna)
+            //selecione uma coluna e na propriedade "DataPropertyName" coloque
+            //o nome da propriedade que você quer exibir naquela coluna (Nome, Telefone...).
+            //O nome da propriedade precisa ser igual ao que existe na camada Models.
             //Comando para evitar da grid gerar os campos automaticamente
             //dgvRegistros.AutoGenerateColumns = false;
+
+            btnSelecionar.Visible = ExibirBotaoSelecionar;
         }
 
         //Método para realizar a pesquisa no banco de dados
@@ -118,6 +143,18 @@ namespace ProjetoExemploCerto.Views
                         "Atenção!", MessageBoxButtons.OK,
                         MessageBoxIcon.Warning);
             }
+        }
+
+        private void btnSelecionar_Click(object sender, EventArgs e)
+        {
+            Selecionar();
+        }
+
+        private void Selecionar()
+        {
+            usuarioSelecao = GetUsuario();
+            if (usuarioSelecao != null)
+                this.DialogResult = DialogResult.OK;
         }
     }
 }

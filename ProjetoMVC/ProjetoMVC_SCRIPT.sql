@@ -11,3 +11,9 @@ CREATE TABLE Usuario
 )
 
 SELECT * FROM Usuario
+
+insert into Usuario (nome, email, senha) values 
+('LUCAS', 'lucas@fmail.com', '123');
+
+update Usuario set nome = 'LUCAS ALBERTO'
+WHERE usuario_id = 2
